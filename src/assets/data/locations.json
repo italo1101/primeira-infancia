@@ -1,0 +1,9 @@
+[
+    { "id": 1, "title" : "Exemplo 01", "lat": -8.0476, "lng": -34.8770 },
+    { "id": 2, "title" : "Exemplo 02", "lat": -8.0520, "lng": -34.8811 },
+    { "id": 3, "title" : "Exemplo 03", "lat": -8.0635, "lng": -34.8723 },
+    { "id": 4, "title" : "Exemplo 04", "lat": -8.0403, "lng": -34.9104 },
+    { "id": 5, "title" : "Exemplo 05", "lat": -8.0552, "lng": -34.9321 },
+    { "id": 6, "title" : "Exemplo 06", "lat": -8.0489, "lng": -34.8677 },
+    { "id": 7, "title" : "Exemplo 07","lat": -8.0346, "lng" : -34.9172 }
+  ]
