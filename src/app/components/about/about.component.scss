@@ -1,0 +1,62 @@
+.showcase{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 10rem;
+  color: #ffffff;
+  background: url(../../../assets/images/bg-what-is-it.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 10%;
+}
+
+.title{
+  font-family: "BROmny-Bold";
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.text{
+  font-family: "BROmny-Regular";
+  font-size: 1.18rem;
+
+  width: 75rem;
+  text-align: justify;
+}
+
+.detail01{
+  background-color: #ffffff;
+  padding: 0.5rem;
+  color: #31A8D7;
+}
+
+.detail02{
+  background-color: #ffffff;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  color: #31A8D7;
+}
+
+.showcase-container-01{
+  display: flex;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+}
+
+.showcase-container-02{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+}
+
+.showcase-container-01,
+.showcase-container-02
+{
+  font-size: 5em;
+}
+

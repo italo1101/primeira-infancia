@@ -18,6 +18,10 @@
   background-color: #F29049;
 }
 
+.navbar-brand{
+  margin-left: 5rem;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -31,6 +35,7 @@
 .navbar-nav a{
   display: block;
   height: 100%;
+  font-size: 0.9rem;
   margin-right: 30px;
   position: relative;
   display: flex;
