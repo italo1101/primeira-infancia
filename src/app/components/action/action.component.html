@@ -1,6 +1,6 @@
-<div class="d-flex flex-column position-relative section">
-  <div class="d-flex flex-wrap w-100 mt">
-    <div class="d-flex flex-column w-50 px">
+<div class="d-flex flex-wrap w-100 mt" id="action-container">
+  <div class="d-flex flex-wrap w-100 auto-m our-actions-justify">
+    <div class="d-flex flex-column auto-w auto-p">
       <div class="d-flex text-uppercase title fs-2">
         conheça nossas ações
       </div>
@@ -25,6 +25,25 @@
           <img class="img-icon" src="assets/images/17.png">
         </div>
       </div>
+      <div class="d-flex flex-row-reverse mt-5 ">
+        <img class="img-smile" src="assets/images/icon-smile.png">
+      </div>
     </div>
+    <div class="d-flex carosel">
+      <swiper-container class="mySwiper" space-between="10" slides-per-view="auto" pagination="true" navigation="true"
+        pagination-clickable="false">
+        <ng-container *ngFor="let post of imagesPost;">
+          <swiper-slide>
+            <img (click)="goToPost(post.post)" class="cursor-pointer img-swiper" [src]="post.img">
+          </swiper-slide>
+        </ng-container>
+      </swiper-container>
+    </div>
+  </div>
+  <div class="position-absolute traslate-spiral">
+    <img class="img-spiral" src="assets/images/icon-spiral.png">
+  </div>
+  <div class="d-flex mt-5">
+    <img class="img-wave" src="assets/images/icon-wave.png">
   </div>
 </div>

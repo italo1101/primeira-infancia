@@ -1,7 +1,6 @@
 .showcase{
   height: 50vh;
   display: flex;
-  margin-top: 10vh;
   flex-direction: column;
   justify-content: center;
   align-items: left;
@@ -59,5 +58,9 @@
 .showcase-container-02
 {
   font-size: 5em;
+}
+
+.position-heart{
+  right: -80px;
 }
 
