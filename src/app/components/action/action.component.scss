@@ -8,6 +8,7 @@ $space: 1rem;
 .text-content {
   font-family: "BROmny-Regular";
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 .traslate-spiral {
@@ -15,7 +16,8 @@ $space: 1rem;
 }
 
 .position-spiral {
-  bottom: 300px;
+  bottom: -65%;
+  left: 0%;
 }
 
 .our-actions-justify{
@@ -51,7 +53,7 @@ $space: 1rem;
 }
 
 .img-wave {
-  width: 100vw;
+  width: 99vw;
   background-size: contain;
 }
 
@@ -116,132 +118,38 @@ swiper-slide {
   min-width: 350px;
 }
 
-.vertinal-line {
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box-box-container p{
+  margin-top: 1rem;
+  width: 45rem;
+}
+
+.box-box-container{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.logo-box{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.main-image img{
+  width: 45rem;
+  border-radius: 2rem;
+}
+
+.middle-line{
   margin-top: 30px;
   border-left: 1px solid #214768;
   height: 500px;
 }
 
-@media only screen and (max-width: 1350px) {
-  .text-content-width {
-    width: 90%;
-  }
 
-  .auto-w {
-    width: 550px !important;
-  }
-  .auto-p {
-    padding-left: ($space * 5);
-    padding-right: ($space * 2);
-  }
-  .text-content-width {
-    width: 100%;
-  }
-  .img-spiral {
-    width: 80px;
-  }
-
-  .img-smile{
-    width: 90px;
-  }
-  .icons-content-width {
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  #criar {
-    padding: 0 2rem;
-  }
-  .text-content-width {
-    width: 100%;
-  }
-
-  .auto-w {
-    width: 100vw !important;
-  }
-
-  .carosel {
-    width: 90vw;
-  }
-
-  .mySwiper {
-    width: 90vw;
-  }
-
-  .our-actions-justify{
-    justify-content: center;
-  }
-
-  .position-spiral {
-    bottom: 470px;
-  }
-  .vertinal-line {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .auto-w {
-    width: 100% !important;
-  }
-
-  .auto-m {
-    margin-top: ($space * 8);
-  }
-
-  .auto-p {
-    padding-left: ($space * 2);
-    padding-right: ($space * 2);
-  }
-
-  .text-content-width {
-    width: 84vw;
-  }
-
-  .img-spiral {
-    width: 60px;
-  }
-
-  .icons-content-width {
-    width: 100%;
-  }
-
-  .carosel {
-    width: 60vw;
-  }
-
-  .mySwiper {
-    width: 60vw;
-  }
-
-  .img-smile{
-    width: 75px;
-    padding-bottom: 20px;
-  }
-
-  .img-spiral-2 {
-    width: 8vw;
-  }
-
-  .content-one-width {
-    padding: 0 .1rem;
-  }
-
-}
-
-@media only screen and (max-width: 400px) {
-
-  .carosel {
-    width: 80vw;
-  }
-
-  .mySwiper {
-    width: 80vw;
-  }
-
-  .content-one-width {
-    padding: 0 .8rem;
-  }
-
-}
