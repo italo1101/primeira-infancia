@@ -1,81 +1,92 @@
-<div class="d-flex flex-wrap w-100 mt" id="action-container">
-  <div class="d-flex flex-wrap w-100 auto-m our-actions-justify">
+<section class="d-flex flex-column position-relative section" id="our-actions">
+  <header class="d-flex flex-wrap w-100 auto-m our-actions-justify">
     <div class="d-flex flex-column auto-w auto-p">
-      <div class="d-flex text-uppercase title fs-2">
-        conheça nossas ações
-      </div>
-      <div class="d-flex text-content-width text-content text-justify">
-        Nosso trabalho segue as ODS’s da Organização das Nações Unidas (ONU),
-        visando assim conseguir resultados que tragam impacto não só na
-        infância, mas sim por toda a vida!
-      </div>
-      <div class="d-flex flex-wrap icons-content-width gap-2 mt-3">
+      <h2 class="d-flex text-uppercase title fs-2" aria-label="Conheça nossas ações">
+        Conheça nossas ações
+      </h2>
+      <p class="d-flex text-content-width text-content text-justify" aria-label="Descrição das ações">
+        Nosso trabalho segue as ODS’s da Organização das Nações Unidas (ONU), visando assim conseguir resultados que tragam impacto não só na infância, mas sim por toda a vida!
+      </p>
+      <div class="d-flex flex-wrap icons-content-width gap-2 mt-3" aria-label="Ícones das ações">
         <div class="d-flex gap-2">
-          <img class="img-icon" src="assets/images/1.png">
-          <img class="img-icon" src="assets/images/2.png">
-
+          <img class="img-icon" src="assets/images/1.png" alt="Ação 1: Descrição breve">
+          <img class="img-icon" src="assets/images/2.png" alt="Ação 2: Descrição breve">
         </div>
         <div class="d-flex gap-2">
-          <img class="img-icon" src="assets/images/5.png">
-          <img class="img-icon" src="assets/images/9.png">
+          <img class="img-icon" src="assets/images/5.png" alt="Ação 3: Descrição breve">
+          <img class="img-icon" src="assets/images/9.png" alt="Ação 4: Descrição breve">
         </div>
         <div class="d-flex gap-2">
-
-          <img class="img-icon" src="assets/images/10.png">
-          <img class="img-icon" src="assets/images/17.png">
+          <img class="img-icon" src="assets/images/10.png" alt="Ação 5: Descrição breve">
+          <img class="img-icon" src="assets/images/17.png" alt="Ação 6: Descrição breve">
         </div>
       </div>
-      <div class="d-flex flex-row-reverse mt-5 ">
-        <img class="img-smile" src="assets/images/icon-smile.png">
+      <div class="d-flex flex-row-reverse mt-5">
+        <img class="img-smile" src="assets/images/icon-smile.png" alt="Ícone sorriso representando felicidade e impacto positivo">
       </div>
     </div>
     <div class="d-flex carosel">
-      <swiper-container class="mySwiper" space-between="10" slides-per-view="auto" pagination="true" navigation="true"
-        pagination-clickable="false">
+      <swiper-container class="mySwiper" space-between="10" slides-per-view="auto" pagination="true" navigation="true" pagination-clickable="false">
         <ng-container *ngFor="let post of imagesPost;">
           <swiper-slide>
-            <img (click)="goToPost(post.post)" class="cursor-pointer img-swiper" [src]="post.img">
+            <img (click)="goToPost(post.post)" class="cursor-pointer img-swiper" [src]="post.img" alt="Post de ação social com foco no impacto na infância">
           </swiper-slide>
         </ng-container>
       </swiper-container>
     </div>
-  </div>
+  </header>
+
   <div class="position-absolute traslate-spiral">
-    <img class="img-spiral" src="assets/images/icon-spiral.png">
+    <img class="img-spiral" src="assets/images/icon-spiral.png" alt="Ícone espiral decorativo">
   </div>
+
   <div class="d-flex mt-5">
-    <img class="img-wave" src="assets/images/icon-wave.png">
+    <img class="img-wave" src="assets/images/icon-wave.png" alt="Ícone onda representando movimento e progresso">
   </div>
 
-  <div class="box">
-    <section class="box-container">
-      <div class="box-box-container">
-        <div class="logo-box">
-          <img src="../../../assets/images/logo-criar.png" alt="">
-        </div>
-        <div class="main-image">
-          <img src="../../../assets/images/carosel-1.png" alt="">
-        </div>
-        <p class="text-content">O espaço é totalmente voltado para o desenvolvimento da criança com foco na primeira infância, e oferta atividades ricas em ludicidade e interatividade em diferentes espaços. Período da vida que vai do nascimento aos seis anos de idade, a primeira infância é uma das maiores prioridades da atual gestão municipal.</p>
+  <div class="d-flex flex-wrap justify-content-center gap-5 mb-5" id="criar">
+    <div class="d-flex flex-column content-one-width justify-content-center align-items-center">
+      <div class="d-flex">
+        <img src="assets/images/logo-criar.png" alt="Logo do projeto Criar, voltado para o desenvolvimento infantil">
       </div>
-    </section>
-
-    <div class="middle-line"></div>
-
-    <section class="box-container">
-      <div class="box-box-container">
-        <div class="logo-box">
-          <img src="../../../assets/images/logo-semana-do-bebe.png" alt="">
-        </div>
-        <div class="main-image">
-          <img src="../../../assets/images/carosel-2.png" alt="">
-        </div>
-        <p class="text-content">Fortalecer políticas públicas focando o cuidado, prevenção e proteção é essencial para garantir o desenvolvimento da criança nos primeiros anos de vida. Há dez anos, a Prefeitura do Recife, em uma parceria importante com o Fundo das Nações Unidas para a Infância (Unicef), promove a Semana do Bebê do Recife.</p>
+      <div class="d-flex w-100 justify-content-center mt-3">
+        <ngb-carousel [showNavigationIndicators]="images2.length > 1" [showNavigationArrows]="images2.length > 1">
+          <ng-container *ngFor="let item of images2; let i=index">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="item" class="w-100 rounded-5" alt="Imagem do carrossel mostrando atividades interativas para o desenvolvimento infantil">
+              </div>
+            </ng-template>
+          </ng-container>
+        </ngb-carousel>
       </div>
-    </section>
-    <section></section>
-    <div class="position-absolute position-spiral">
-      <img class="img-spiral-2" src="assets/images/icon-spiral-2.png" alt="">
+      <p class="d-flex text-justify mt-3 text-content" aria-label="Descrição do espaço Criar">
+        O espaço é totalmente voltado para o desenvolvimento da criança com foco na primeira infância, e oferta atividades ricas em ludicidade e interatividade em diferentes espaços. Período da vida que vai do nascimento aos seis anos de idade, a primeira infância é uma das maiores prioridades da atual gestão municipal.
+      </p>
+    </div>
+    <div class="vertinal-line"></div>
+    <div class="d-flex flex-column content-one-width justify-content-center align-items-center">
+      <div class="d-flex">
+        <img src="assets/images/logo-semana-do-bebe.png" alt="Logo da Semana do Bebê, evento dedicado ao cuidado infantil">
+      </div>
+      <div class="d-flex w-100 justify-content-center mt-3">
+        <ngb-carousel [showNavigationIndicators]="images3.length > 1" [showNavigationArrows]="images3.length > 1">
+          <ng-container *ngFor="let item of images3; let i=index">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="item" class="w-100 rounded-5" alt="Imagem do carrossel sobre a Semana do Bebê, destacando atividades de cuidado infantil">
+              </div>
+            </ng-template>
+          </ng-container>
+        </ngb-carousel>
+      </div>
+      <p class="d-flex text-justify mt-3 text-content" aria-label="Descrição da Semana do Bebê">
+        Fortalecer políticas públicas focando o cuidado, prevenção e proteção é essencial para garantir o desenvolvimento da criança nos primeiros anos de vida. Há dez anos, a Prefeitura do Recife, em uma parceria importante com o Fundo das Nações Unidas para a Infância (Unicef), promove a Semana do Bebê do Recife.
+      </p>
     </div>
   </div>
-</div>
+
+  <div class="position-absolute position-spiral">
+    <img class="img-spiral-2" src="assets/images/icon-spiral-2.png" alt="Ícone espiral decorativo">
+  </div>
+</section>

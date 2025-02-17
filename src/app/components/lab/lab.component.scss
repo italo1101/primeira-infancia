@@ -1,0 +1,111 @@
+.background-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #1479D4;
+  background-image: url('../../../assets/images/bg-lines.png');
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    margin-left: 0.5rem;
+  }
+
+  .heading-title {
+    font-family: "BROmny-Bold";
+    max-width: 300px;
+  }
+
+  .description-text {
+    font-family: "BROmny-Regular";
+    font-size: 1.2rem;
+    width: 50%;
+    border-left: 4px solid #fff;
+  }
+
+  .highlighted-title {
+    background-color: #fff;
+    color: #31A8D7;
+    padding: 0.3rem;
+  }
+
+  .pt-7 {
+    padding-top: 5rem;
+  }
+
+  .truck-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .truck-image {
+    width: 55vw;
+    max-height: 420px;
+    max-width: 1090px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .description-text {
+    width: 60%;
+  }
+
+  .background-section > div {
+    align-items: flex-start !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .background-section div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+  }
+
+  .description-text {
+    text-align: justify;
+    width: 400px;
+    padding: 1rem !important;
+  }
+
+  .heading-title {
+    text-align: center !important;
+    width: auto;
+    padding: 0 !important;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .truck-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading-title {
+    margin-top: 60px !important;
+
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .heading-title {
+    width: 340px;
+    margin-top: 40px !important;
+  }
+
+  .description-text {
+    border-left: none;
+    text-align: justify;
+    width: 340px;
+    padding: 0 !important;
+  }
+}
